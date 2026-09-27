@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#07090b">
+<meta name="description" content="风起旧厂街 · 高启强 —— 全平台对话式剧情游戏：网页 / Windows / Android。">
+<title>风起旧厂街 · 高启强 v2.7</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%}
+body{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(ellipse at 50% -10%,#22303a 0%,#0b0f12 46%,#07090b 100%);
+  color:#ece5d8;font-family:"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  padding:28px 16px;position:relative;overflow-x:hidden;
+}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.5;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='.3'/></svg>");
+}
+main{
+  position:relative;width:min(560px,100%);text-align:center;padding:46px 26px 38px;
+  background:linear-gradient(180deg,rgba(20,26,31,.72),rgba(11,15,18,.86));
+  border:1px solid rgba(255,255,255,.14);border-top-color:rgba(255,255,255,.28);
+  border-radius:22px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 24px 60px rgba(0,0,0,.55);
+  backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%);
+}
+.ver{
+  position:absolute;right:22px;top:20px;font-size:11px;color:#e0a04a;letter-spacing:2px;
+  border:1px solid rgba(224,160,74,.4);border-radius:999px;padding:3px 10px;
+}
+h1{
+  font-family:Georgia,"Songti SC","Noto Serif SC",serif;font-size:clamp(38px,9vw,56px);font-weight:600;
+  letter-spacing:12px;text-indent:12px;color:#f4efe4;
+  text-shadow:0 6px 40px rgba(0,0,0,.85),0 0 60px rgba(224,160,74,.2);
+}
+.sub{margin-top:14px;color:#ffc878;letter-spacing:6px;font-size:13.5px;font-weight:600}
+.desc{margin-top:16px;color:#a8b0b4;font-size:13.5px;line-height:2;font-family:Georgia,"Songti SC",serif}
+.btns{margin-top:34px;display:flex;flex-direction:column;gap:12px}
+a.btn{
+  display:block;text-decoration:none;border-radius:14px;padding:14px 18px;
+  font-size:15px;font-weight:600;letter-spacing:3px;
+  background:rgba(14,19,23,.66);border:1px solid rgba(255,255,255,.12);color:#ece5d8;
+  box-shadow:0 8px 26px rgba(0,0,0,.45);
+  transition:transform .25s,border-color .25s,background .25s;
+}
+a.btn:hover{transform:translateY(-2px);border-color:rgba(224,160,74,.5);background:rgba(30,26,18,.7)}
+a.btn.pri{
+  background:linear-gradient(180deg,rgba(224,160,74,.95),rgba(170,112,40,.95));
+  color:#1a1206;border-color:rgba(255,200,120,.55);
+  box-shadow:0 12px 34px rgba(0,0,0,.5),0 0 30px rgba(224,160,74,.24);
+}
+a.btn.pri:hover{background:linear-gradient(180deg,rgba(236,176,90,.98),rgba(182,122,46,.98))}
+.note{margin-top:26px;font-size:11.5px;color:#6d777d;line-height:2}
+@media (max-width:480px){
+  main{padding:40px 18px 30px}
+  h1{letter-spacing:8px;text-indent:8px}
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="ver">v2.7</div>
+  <h1>风起旧厂街</h1>
+  <p class="sub">高启强 · 全平台对话式剧情游戏</p>
+  <p class="desc">2000 年，京海市，旧厂街菜市场。<br>你还是一个每天凌晨三点起来进鱼的鱼贩子。<br>9 结局 · 13 成就 · 四个时代 · 照片级写实场景</p>
+  <div class="btns">
+    <a class="btn pri" href="./fengqi-jiuchangjie.html">网页版 —— 电脑 / 横屏直接玩</a>
+    <a class="btn pri" href="./mobile/">手机版 —— 竖屏 PWA，可加桌面</a>
+    <a class="btn" href="https://github.com/uahz/JcJgame/releases/latest">下载 Android APK / Windows 桌面版</a>
+  </div>
+  <p class="note">v2.7 修掉图鉴打不开、状态栏黑边、返回键退出桌面、液态玻璃丢失等 10 项问题<br>安卓从旧版升级请先卸载旧版再安装（签名已更换）</p>
+</main>
+</body>
+</html>

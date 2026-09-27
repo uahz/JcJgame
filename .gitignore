@@ -1,0 +1,12 @@
+# 临时 / 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.tmp
+*.swp
+
+# 构建临时产物（源码工程内构建时生成）
+05-Android源码工程/build/
+05-Android源码工程/**/*.class
+05-Android源码工程/keystore/*.log

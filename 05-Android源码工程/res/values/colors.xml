@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 写实电影感主色：近黑底 / 暖琥珀 -->
+    <color name="bg0">#FF07090B</color>
+    <color name="bg1">#FF0B0F12</color>
+    <color name="amber">#FFE0A04A</color>
+</resources>

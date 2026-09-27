@@ -1,0 +1,32 @@
+{
+  "name": "风起旧厂街 · 高启强",
+  "short_name": "旧厂街",
+  "description": "对话式剧情游戏：2000 年京海旧厂街，从鱼摊一步一步走上巅峰。",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07090b",
+  "theme_color": "#07090b",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
