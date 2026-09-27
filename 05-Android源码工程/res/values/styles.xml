@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--
-      沉浸式（edge-to-edge）的关键三条，缺一条都会在设备上露出「大黑边」：
-        1. 状态栏 / 导航栏背景透明（statusBarColor / navigationBarColor = transparent）
-        2. 系统栏继承窗口背景（windowDrawsSystemBarBackgrounds = true），
-           否则旧系统会直接给系统栏填黑色
-        3. 关掉系统给透明系统栏垫的对比度蒙版（enforceStatusBarContrast = false, API 29+）
-      基主题用 Material.NoActionBar（API 21+，minSdk 也是 21），而不是老的
-      Theme.NoTitleBar —— 后者不带 Material 的系统栏行为，正是问题多发的那套。
-      windowBackground 设为深色底，避免 WebView 首帧前的白闪。
-    -->
-    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
-        <item name="android:windowBackground">@color/bg0</item>
-        <item name="android:colorBackground">@color/bg0</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
-        <item name="android:enforceStatusBarContrast">false</item>
-        <item name="android:enforceNavigationBarContrast">false</item>
-        <item name="android:windowNoTitle">true</item>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#FF000000</item>
+        <item name="android:colorBackground">#FF000000</item>
     </style>
 </resources>
