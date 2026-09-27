@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.uahz.fengqi"
-    android:versionCode="28"
-    android:versionName="2.7">
+    android:versionCode="29"
+    android:versionName="2.8">
 
-    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" />
+    <uses-sdk android:minSdkVersion="33" android:targetSdkVersion="34" />
 
     <application
         android:label="风起旧厂街"
